@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <div class="add-block">
+
+    <!-- <div class="add-block">
         <form class="add-form">
             <input class="inp-name" type="text" placeholder="Введите имя">
             <input class="inp-img" type="text" placeholder="Загрузите фотографию">
@@ -18,7 +19,41 @@
             <input class="inp-description" type="text" placeholder="Описание">
             <button type="submit">Create</button>
         </form>
+    </div> -->
+
+
+    <div class="background-create" id="background">
+        <div class="bg-white text-center">
+            <h1 class="text-3xl">Введите данные</h1>
+            <div class="add-block">
+                <form class="add-form">
+                    <div class="my-4 text-left">
+
+                        <input type="text" class="inp-name" placeholder="Введите ник..." />
+                    </div>
+                    <div class="my-4 text-left">
+
+                        <input id="password" type="url" class="inp-img border block w-full p-15 mt-2 rounded"
+                            placeholder="URL картинки" />
+                    </div>
+                    <div class="my-4 text-left">
+
+                        <input type="number" class="inp-likes border block w-full p-15 mt-2 rounded"
+                            placeholder="Количество лайков" />
+                    </div>
+                    <div class="my-4 text-left">
+                        <input type="text" class="inp-description border block w-full p-15 mt-2 rounded"
+                            placeholder="Описание" />
+                    </div>
+                    <button class="btn-center" type="submit">Create</button>
+                </form>
+            </div>
+
+        </div>
     </div>
+
+
+
 
     <div class="posts">
         <div class="container">
@@ -30,6 +65,42 @@
     </div>
 
 
+
+    <!-- Modal window -->
+    <div class="background">
+        <div id="open-modal" class="modal-window">
+            <div class="modal-body">
+                <form class="edit-form">
+                    <input class="edit-inp-name" type="text">
+                    <input class="edit-inp-img" type="text">
+                    <input class="edit-inp-likes" type="text">
+                    <input class="edit-inp-description" type="text">
+                    <button type="submit" class="edit-btn">Save</button>
+                </form>
+            </div>
+            <button class="modal-close">
+                <img src="https://cdn-icons.flaticon.com/png/512/3024/premium/3024525.png?token=exp=1639140139~hmac=83d5f68eb4759df43100309f579fc85b"
+                    alt="">
+            </button>
+        </div>
+    </div>
+
+
+    <div class="search-block container mt-3">
+        <input class="form-control search-inp" placeholder="Search.." type="text">
+    </div>
+
+
+    <nav aria-label="Page navigation example">
+        <ul calss="paginaiton justify-content-center">
+
+
+        </ul>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
