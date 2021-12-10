@@ -52,7 +52,7 @@ async function addPost(event) {
 addForm.on("submit", addPost);
 
 //! Read
-let container = $(".container");
+let container = $(".post-container");
 let image = $(".image");
 let dataDetails = $(".data");
 let posts = [];
